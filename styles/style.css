@@ -1,0 +1,19 @@
+body {
+	.attribution {
+		font-size: 11px;
+		text-align: center;
+	}
+	.attribution a {
+		color: hsl(228, 45%, 44%);
+	}
+}
+
+.heroTitle {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 50em;
+}
