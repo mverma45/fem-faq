@@ -20,6 +20,8 @@ body {
 .wrapper {
 	margin: 0 auto;
 	width: 50em;
+	border-radius: 2em;
+	z-index: -1;
 }
 
 .subText {
