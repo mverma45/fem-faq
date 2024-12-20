@@ -1,11 +1,13 @@
 body {
-	.attribution {
-		font-size: 16px;
-		text-align: center;
-	}
-	.attribution a {
-		color: hsl(228, 45%, 44%);
-	}
+	background-color: #d3d3d3;
+}
+
+.attribution {
+	font-size: 16px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
 }
 
 .heroTitle {
@@ -17,11 +19,27 @@ body {
 	cursor: pointer;
 }
 
+.tipTop img {
+	background-image: top;
+}
+/* .mainText {
+	font-size: 1.1em;
+} */
+
 .wrapper {
-	margin: 0 auto;
-	width: 50em;
+	margin-top: 12em;
+	width: 40em;
+	font-size: 1em;
+	align-self: center;
+	position: absolute;
+	padding: 2em;
+	background-color: #ffffff;
 	border-radius: 2em;
-	z-index: -1;
+}
+
+.heroWrapper {
+	display: flex;
+	flex-direction: column;
 }
 
 .subText {
