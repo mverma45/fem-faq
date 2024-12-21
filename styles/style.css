@@ -1,4 +1,6 @@
 body {
+	/* top | right | bottom | left */
+	/* margin: 0 auto; */
 	background-color: #d3d3d3;
 }
 
@@ -6,6 +8,7 @@ body {
 	font-size: 16px;
 	text-align: center;
 }
+
 .attribution a {
 	color: hsl(228, 45%, 44%);
 }
@@ -19,19 +22,12 @@ body {
 	cursor: pointer;
 }
 
-.tipTop img {
-	background-image: top;
-}
-/* .mainText {
-	font-size: 1.1em;
-} */
-
 .wrapper {
-	margin-top: 12em;
+	margin-top: -13em;
 	width: 40em;
 	font-size: 1em;
-	align-self: center;
-	position: absolute;
+	margin-left: 20em;
+	position: relative;
 	padding: 2em;
 	background-color: #ffffff;
 	border-radius: 2em;
