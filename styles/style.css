@@ -4,6 +4,10 @@ body {
 	background-color: #d3d3d3;
 }
 
+.hidden {
+	display: none;
+}
+
 .attribution {
 	font-size: 16px;
 	text-align: center;
@@ -38,6 +42,6 @@ body {
 	flex-direction: column;
 }
 
-.subText {
+.answer {
 	color: gray;
 }
