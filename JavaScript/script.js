@@ -1,10 +1,17 @@
-const btns = document.querySelectorAll('.heroTitle');
+const btns = document.querySelectorAll('.question');
 
-btns.forEach((item) => {
-	const question = item.querySelector('question');
-	const answer = item.querySelector('answer');
+question.forEach((question) => {
+	const pointer = question.querySelector('.pointerHero');
+	const answer = question.nextElementSibling;
 
-	question.addEventListener('click', () => {
+	pointer.addEventListener('click', () => {
 		answer.classList.toggle('hidden');
+
+		const icon = pointer.querySelector('img');
+		if (answer.classList.contains('hidden')) {
+			icon.src = './assets/images/icon-plus.svg';
+		} else {
+			icon.src = './assets/images/icon-minus.svg';
+		}
 	});
 });

@@ -4,6 +4,16 @@ body {
 	background-color: #d3d3d3;
 }
 
+.answer {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-in-out;
+}
+
+.answer.hidden {
+	max-height: 500px; /* Adjust based on content size */
+}
+
 .hidden {
 	display: none;
 }
