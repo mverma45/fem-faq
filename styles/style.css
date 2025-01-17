@@ -5,9 +5,11 @@ body {
 }
 
 .answer {
-	max-height: 0;
+	/* max-height: 0;
 	overflow: hidden;
-	transition: max-height 0.3s ease-in-out;
+	transition: max-height 0.3s ease-in-out; */
+	display: block;
+	color: gray;
 }
 
 .answer.hidden {
@@ -50,8 +52,4 @@ body {
 .heroWrapper {
 	display: flex;
 	flex-direction: column;
-}
-
-.answer {
-	color: gray;
 }
