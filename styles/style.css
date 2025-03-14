@@ -83,7 +83,7 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 	.tipTop {
 		height: 85vh; /* Smaller banner on mobile */
 		width: auto;
