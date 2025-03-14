@@ -1,55 +1,107 @@
+/* Reset and Body Styles */
 body {
-	/* top | right | bottom | left */
-	/* margin: 0 auto; */
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background-color: #d3d3d3;
+	font-family: 'Work Sans', sans-serif;
 }
 
-.answer {
-	/* max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.3s ease-in-out; */
-	display: block;
-	color: gray;
+/* Banner Section */
+.tipTop {
+	margin: 0;
+	padding: 0;
+	width: 200rem;
+	height: 300px;
+	background: url('/assets/images/background-pattern-desktop.svg') no-repeat
+		center center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.answer.hidden {
-	max-height: 500px; /* Adjust based on content size */
+/* FAQ Wrapper */
+.wrapper {
+	width: 90%;
+	max-width: 500px;
+	background-color: #ffffff;
+	border-radius: 1.5rem;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	padding: 2rem;
+	position: relative;
+	margin: -100px auto 2rem auto; /* Keeps space from banner */
 }
 
-.hidden {
-	display: none;
-}
-
-.attribution {
-	font-size: 16px;
-	text-align: center;
-}
-
-.attribution a {
-	color: hsl(228, 45%, 44%);
-}
-
+/* Title */
 .heroTitle {
 	font-size: 2rem;
 	font-weight: 700;
+	margin-bottom: 1rem;
 }
 
+/* Question Section */
 .pointerHero {
 	cursor: pointer;
-}
-
-.wrapper {
-	margin-top: -13em;
-	width: 40em;
-	font-size: 1em;
-	margin-left: 20em;
-	position: relative;
-	padding: 2em;
-	background-color: #ffffff;
-	border-radius: 2em;
-}
-
-.heroWrapper {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 0;
+	border-bottom: 1px solid #eee;
+	transition: color 0.3s ease-in-out;
+}
+
+.pointerHero:hover {
+	color: hsl(292, 42%, 48%);
+}
+
+/* Answer Section */
+.answer {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-in-out;
+	color: gray;
+	font-size: 0.95rem;
+	padding: 0 1rem;
+	line-height: 1.5;
+}
+
+/* Hidden Answer */
+.answer.hidden {
+	max-height: 0;
+	padding: 0;
+}
+
+/* Plus/Minus Icons */
+.pointerHero img {
+	width: 1.5rem;
+	height: 1.5rem;
+	transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.tipTop {
+		height: 20rem; /* Smaller banner on mobile */
+		width: auto;
+	}
+
+	.wrapper {
+		width: 95%;
+		max-width: 90%;
+		margin: -80px auto 2rem auto;
+		padding: 1.2rem;
+	}
+
+	.heroTitle {
+		font-size: 1.5rem;
+	}
+
+	.pointerHero img {
+		width: 1.2rem;
+		height: 1.2rem;
+	}
 }
